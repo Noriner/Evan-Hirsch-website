@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'FontBold';
+  src: url(../src/Fonts/5563063/557f817d-9c25-4a23-baaf-a3cf84a7cd7c.woff),
+  url(../src/Fonts/5563063/03008527-67bd-478e-98e3-3b56dd9a6520.woff2);
+}
+
+@font-face {
+  font-family: 'FontLight';
+  src: url(../src/Fonts/5563279/ccf25ada-6d2a-4133-95dc-deb039e22999.woff),
+  url(../src/Fonts/5563279/6b4d4830-9c7d-43d2-b5d3-c73f739561b9.woff2);
+}
+
+
+body{
+  background-color: #777373;
+  --LightBlue: #A7C3D6;
+  --DarkBlue: #70BDDC;
+}
+
+.wrapper {
+  text-align: center;
+  min-height: 100vh;
+  max-width: 1480px;
+  margin: 0 auto;
+}
