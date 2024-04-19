@@ -1,0 +1,28 @@
+.wrapper{
+    text-align: right;
+    
+    font-size: 1.1em;
+    position: relative;
+    top: 25px;
+
+    a{
+        text-decoration: none;
+        font-family: "FontLight";
+        color: var(--LightBlue);
+    }
+
+    .bordertop{
+        border-top: 3px solid var(--LightBlue);
+        margin: 5px 0px;
+        width: 200px;
+        position: relative;
+        right: 5px;
+    }
+
+    .borderright{
+        border-right: 3px solid var(--LightBlue);
+        min-height: 30px;
+        position: relative;
+        right: -4px;
+    }
+}
