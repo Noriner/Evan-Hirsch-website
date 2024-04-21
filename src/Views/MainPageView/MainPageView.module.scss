@@ -1,0 +1,80 @@
+.wrapper{
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+            "upwork upprod text upinter upexp"
+            "linkwork linkprod text linkinter linkexp"
+            "downwork downprod text downinter downexp"
+        ;
+
+        
+
+        .text{
+            grid-area: text;
+            color: #EFECEC;
+            font-family: "FontLight";
+            font-size: 1.25em;
+            text-align: left;
+            padding: 20px 10px 20px 25%;
+
+            div{
+                margin-bottom: 1.25em;
+            }
+        }
+
+        //border design for text
+        .borderdesignup{
+            grid-area: text;
+            z-index: -1;
+
+            .bordertop{
+                width: 80%;
+                height: 40px;
+                border-top: 3px solid var(--LightBlue);
+                border-left: 3px solid var(--LightBlue);
+                border-top-left-radius: 40px;
+                margin-left: 40px;
+            }
+
+            .borderleft{
+                height: 40%;
+                width: 40px;
+                border-right: 3px solid var(--LightBlue);
+                border-bottom: 3px solid var(--LightBlue);
+            }
+            
+        }
+
+        .borderdesigndown{
+            grid-area: text;
+            z-index: -1;
+            transform: rotate(180deg);
+            position: relative;
+
+            .bordertop{
+                position: absolute;
+                left: -45px;
+                width: 80%;
+                height: 40px;
+                border-top: 3px solid var(--LightBlue);
+                border-left: 3px solid var(--LightBlue);
+                border-top-left-radius: 40px;
+                margin-left: 40px;
+            }
+
+            .borderleft{
+                position: absolute;
+                left: -45px;
+                top: 40px;
+                height: 40%;
+                width: 40px;
+                border-right: 3px solid var(--LightBlue);
+                border-bottom: 3px solid var(--LightBlue);
+                
+            }
+            
+        }
+    }
+}

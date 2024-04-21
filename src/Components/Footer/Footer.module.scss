@@ -1,0 +1,20 @@
+.wrapper{
+    margin: 20px 50px;
+    position: fixed;
+    bottom: 0;
+
+    .borderleft{
+        border-left: 3px solid var(--LightBlue);
+        margin: 5px 0px;
+        min-height: 30px;
+        position: relative;
+        left: -5px;
+    }
+
+    .borderbottom{
+        border-bottom: 3px solid var(--LightBlue);
+        width: 200px;
+        position: relative;
+        left: 5px;
+    }
+}
