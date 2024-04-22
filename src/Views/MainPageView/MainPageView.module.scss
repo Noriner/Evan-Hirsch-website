@@ -3,6 +3,7 @@
     .grid{
         display: grid;
         grid-template-columns: repeat(5, 20%);
+        
         grid-template-areas: 
             "upwork upprod text upinter upexp"
             "linkwork linkprod text linkinter linkexp"
@@ -39,12 +40,11 @@
             }
 
             .borderleft{
-                height: 40%;
+                height: 37%;
                 width: 40px;
                 border-right: 3px solid var(--LightBlue);
                 border-bottom: 3px solid var(--LightBlue);
-            }
-            
+            }  
         }
 
         .borderdesigndown{
@@ -68,13 +68,47 @@
                 position: absolute;
                 left: -45px;
                 top: 40px;
-                height: 40%;
+                height: 37%;
                 width: 40px;
                 border-right: 3px solid var(--LightBlue);
                 border-bottom: 3px solid var(--LightBlue);
-                
             }
-            
+        }
+        // end of border design text
+
+        .linkworkshop{
+            grid-area: linkwork;
+            color: var(--TextBlue);
+            text-decoration: none;
+            font-family: "FontBold";
+            font-size: 1.3em;
+            margin-top: 50px;
+        }
+
+        .linkproduct{
+            grid-area: linkprod;
+            color: var(--TextBlue);
+            text-decoration: none;
+            font-family: "FontBold";
+            font-size: 1.3em;
+            margin-top: 50px;
+        }
+        .linkintervention{
+            grid-area: linkinter;
+            color: var(--TextBlue);
+            text-decoration: none;
+            font-family: "FontBold";
+            font-size: 1.3em;
+            margin-top: 100px;
+        }
+
+        .linkexp{
+            grid-area: linkexp;
+            color: var(--TextBlue);
+            text-decoration: none;
+            font-family: "FontBold";
+            font-size: 1.3em;
+            margin-top: 100px;
         }
     }
 }

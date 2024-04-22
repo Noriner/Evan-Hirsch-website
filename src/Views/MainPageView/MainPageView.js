@@ -28,6 +28,22 @@ const MainPageView = () => {
                         <div className={styles.bordertop}></div>
                         <div className={styles.borderleft}></div>
                     </div>
+                    <Link to="/workshops&thoughtleadership" className={styles.linkworkshop}>
+                        <div>Workshops &</div>
+                        <div>Thought Leadership</div>
+                    </Link>
+                    <Link to="/product&service" className={styles.linkproduct}>
+                        <div>Product &</div>
+                        <div>Service Design</div>
+                    </Link>
+                    <Link to="/interventiondesign" className={styles.linkintervention}>
+                        <div>Intervention</div>
+                        <div>Design</div>
+                    </Link>
+                    <Link to="/experience&bio" className={styles.linkexp}>
+                        <div>Experience</div>
+                        <div>& Bio</div>
+                    </Link>
                 </div>
             </div>
             <MainPageFooter></MainPageFooter>
