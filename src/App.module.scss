@@ -16,6 +16,8 @@ body{
   --LightBlue: #A7C3D6;
   --DarkBlue: #70BDDC;
   --TextBlue: #A7C3D6;
+  --LinkGrey: #A9A5A5;
+  --LinkGreyActive: #8B8787;
 }
 
 .wrapper {
@@ -24,4 +26,10 @@ body{
   max-width: 1480px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+:global{
+  .active{
+    color: var(--LinkGreyActive) !important;
+  }
 }

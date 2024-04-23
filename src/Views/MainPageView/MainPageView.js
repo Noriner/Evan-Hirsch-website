@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import MainPageFooter from "../../Components/Footer/MainPageFooter/MainPageFooter";
 import styles from "./MainPageView.module.scss";
 
+import evan from "../../Pictures/ev-headshot.png";
+import intervention from "../../Pictures/intervention.png";
+import product from "../../Pictures/image-6.png";
+import workshop from "../../Pictures/mask-group.png";
 
 const MainPageView = () => {
     return (
@@ -10,12 +14,12 @@ const MainPageView = () => {
             <div className={styles.wrapper}>
                 <div className={styles.grid}>
                     <div className={styles.text}>
-                        <div>
+                        <div className={styles.textup}>
                             I bring the power of storytelling to product
                             strategy and design to create compelling experiences, products and services that build emotional 
                             connections with users to drive adoption and growth.
                         </div> 
-                        <div>
+                        <div className={styles.textdown}>
                             I lead and build world-class product and design organizations that innovate and ship solutions to the most challenging 
                             and complex problems by bringing a relational approach through the lens of emotion to every step of every journey.
                         </div>
@@ -44,6 +48,10 @@ const MainPageView = () => {
                         <div>Experience</div>
                         <div>& Bio</div>
                     </Link>
+                    <img className={styles.evanimg} src={evan} alt="Evan Hirsch" />
+                    <img className={styles.interimg} src={intervention} alt="Intervention" />
+                    <img className={styles.prodimg} src={product} alt="Product" />
+                    <img className={styles.workimg} src={workshop} alt="workshop" />
                 </div>
             </div>
             <MainPageFooter></MainPageFooter>

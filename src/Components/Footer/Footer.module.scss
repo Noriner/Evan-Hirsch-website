@@ -2,6 +2,8 @@
     margin: 20px 50px;
     position: fixed;
     bottom: 0;
+    max-width: 1380px;
+    width: 100%;
 
     .borderleft{
         border-left: 3px solid var(--LightBlue);
@@ -17,4 +19,37 @@
         position: relative;
         left: 5px;
     }
+
+    .grid{
+        position: relative;
+        top: -40px;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-areas: 
+            "thought product intervention experience"
+        ;
+        
+        a{
+            text-decoration: none;
+            font-family: "FontLight";
+            color: var(--LinkGrey);
+        }
+
+        .linkthought{
+            grid-area: thought;
+        }
+
+        .linkproduct{
+            grid-area: product;
+        }
+
+        .linkintervention{
+            grid-area: intervention;
+        }
+
+        .linkexperience{
+            grid-area: experience;
+        }
+    }
 }
+
