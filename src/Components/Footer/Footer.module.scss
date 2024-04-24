@@ -53,3 +53,9 @@
     }
 }
 
+:global{
+    .active{
+    color: var(--LinkGreyActive) !important;
+    }
+}
+

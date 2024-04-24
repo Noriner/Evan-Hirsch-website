@@ -1,0 +1,21 @@
+.wrapper{
+    text-align: left;
+    font-family: "FontBold";
+    color: var(--LightBlue);
+
+    
+    h2{
+        display: inline-block;
+        margin: 0;
+        font-size: 2.1em;
+        font-weight: 300;
+        padding-left: 10px; 
+    }
+
+    .border{
+        display: inline-block;
+        min-height: 40%;
+        margin-left: 10px;
+        border-left: 4px solid var(--LightBlue);
+    }
+}
