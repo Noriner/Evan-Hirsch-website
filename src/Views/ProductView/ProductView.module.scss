@@ -1,6 +1,12 @@
 .wrapper{
-    padding-top: 35px;
+    position: relative;
+    min-height: 90vh;
+    
     .grid{
+        position: absolute;
+        top: 40%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         margin: 20px 50px;
         display: grid;
         grid-template-columns: 22% auto 22% auto 22% auto 22%;
