@@ -13,6 +13,10 @@
             color: var(--LightBlue);
             font-family: "FontBold";
             font-size: 1.37em;
+
+            .subtitle{
+                font-family: "FontLight";
+            }
         }
 
         #title1{
@@ -32,10 +36,16 @@
         }
 
         .text{
-            color: var(--LightBlue);
-            margin-top: 50px;
+            color: var(--TextLightBlue);
+            font-family: "FontLight";
+            letter-spacing: 1.1px;
             font-size: 1.2em;
             text-align: left;
+            margin-top: 50px;
+
+            div{
+                margin-bottom: 1.5em;
+            }
         }
 
         #text1{
@@ -63,9 +73,66 @@
                     top: 64px;
                     z-index: -1;
                 }
+            }
+        }
 
+        #text2{
+            grid-area: text2;
+
+            .imgholder{
+                img{
+                    max-width: 100%;
+                }
             }
 
+            .textbetween{
+                margin: 90px 0;
+            }
+        }
+
+        #text3{
+            grid-area: text3;
+
+            .imgholder{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        #text4{
+            grid-area: text4;
+
+            .imgholder{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .breakerbox{
+            position: relative;
+            .breaker{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                border-left: 3px solid var(--BreakBlue);
+                height: 60%;
+            }
+        }
+
+        #breaker1{
+            grid-area: break1;
+        }
+
+        #breaker2{
+            grid-area: break2;
+        }
+
+        #breaker3{
+            grid-area: break3;
         }
     }
 }
