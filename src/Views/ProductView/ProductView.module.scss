@@ -1,0 +1,71 @@
+.wrapper{
+    padding-top: 50px;
+    .grid{
+        margin: 20px 50px;
+        display: grid;
+        grid-template-columns: 22% auto 22% auto 22% auto 22%;
+        grid-template-areas: 
+            "title1 break1 title2 break2 title3 break3 title4"
+            "text1 break1 text2 break2 text3 break3 text4"
+        ;
+
+        .title{
+            color: var(--LightBlue);
+            font-family: "FontBold";
+            font-size: 1.37em;
+        }
+
+        #title1{
+            grid-area: title1;
+        }
+
+        #title2{
+            grid-area: title2;
+        }
+
+        #title3{
+            grid-area: title3;
+        }
+
+        #title4{
+            grid-area: title4;
+        }
+
+        .text{
+            color: var(--LightBlue);
+            margin-top: 50px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        #text1{
+            grid-area: text1;
+
+            .videophone{  
+                text-align: center;
+                padding-top: 50px;   
+                position: relative;  
+                         
+
+                .phonecase{
+                    position: absolute;
+                    margin: 0 auto;
+                    max-width: 210px;
+                    left: 15%;
+                }
+                
+                .videoincase{
+                    max-width: 200px;
+                    max-height: 380px;
+                    position: absolute;
+                    margin: 0 auto;
+                    left: 21%;
+                    top: 64px;
+                    z-index: -1;
+                }
+
+            }
+
+        }
+    }
+}

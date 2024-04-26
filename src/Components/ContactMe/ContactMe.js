@@ -5,7 +5,7 @@ function ContactMe(){
     return(
         <>
             <div className={styles.wrapper}>
-                <a href="#"><div>Get in touch</div></a>
+                <a href="mailto:ev@evhirsch.com"><div>Get in touch</div></a>
                 <div className={styles.bordertop}></div>
                 <div className={styles.borderright}></div>
             </div>

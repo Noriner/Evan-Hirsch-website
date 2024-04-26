@@ -12,7 +12,8 @@ const App = () => {
     <Router>
     <div className={styles.wrapper}>
       <Header></Header>
-      <Routes basename="/my-app">
+      <Routes>
+      {/* <Routes basename="/my-app"> */}
           <Route path="/" Component={MainPageView} />
           <Route path="/experience&bio" Component={ExperienceView} />
           <Route path="/interventiondesign" Component={InterventionView} />
