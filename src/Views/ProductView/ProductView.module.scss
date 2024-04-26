@@ -1,5 +1,5 @@
 .wrapper{
-    padding-top: 50px;
+    padding-top: 35px;
     .grid{
         margin: 20px 50px;
         display: grid;
@@ -44,7 +44,7 @@
             margin-top: 50px;
 
             div{
-                margin-bottom: 1.5em;
+                margin-bottom: 1em;
             }
         }
 
@@ -53,7 +53,7 @@
 
             .videophone{  
                 text-align: center;
-                padding-top: 50px;   
+                padding-top: 30px;   
                 position: relative;  
                          
 
@@ -70,7 +70,7 @@
                     position: absolute;
                     margin: 0 auto;
                     left: 21%;
-                    top: 64px;
+                    top: 46px;
                     z-index: -1;
                 }
             }
@@ -86,7 +86,7 @@
             }
 
             .textbetween{
-                margin: 90px 0;
+                margin: 40px 0;
             }
         }
 
@@ -105,7 +105,7 @@
 
             .imgholder{
                 img{
-                    max-width: 100%;
+                    max-width: 85%;
                 }
             }
         }
