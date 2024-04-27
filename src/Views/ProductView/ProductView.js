@@ -6,13 +6,15 @@ import movie from "../../Videos/Phonevideo.mov";
 import bravemind from "../../Pictures/bravemind.png";
 import hotel from "../../Pictures/hotelgamescene.png";
 import mail from "../../Pictures/mail.png";
-import Biochill from "../../Pictures/Biochill.png";
+import biochill from "../../Pictures/Biochill.png";
+import background from "../../Pictures/Background/BackgroundImg2.png"
 
 const  ProductView = () => {
     return(
         <>
             <div className={styles.wrapper}>
                 <div className={styles.grid}>
+                    <div className={styles.backgroundimg}><img src={background} alt="" /></div>
                     <div id={styles.title1} className={styles.title}>
                         <div>University Behavioral</div>
                         <div>Health Companion</div>
@@ -53,7 +55,7 @@ const  ProductView = () => {
                         <div className={styles.subtitle}>(Dutch National Police)</div>
                     </div>
                     <div id={styles.text4} className={styles.text}>
-                        <div className={styles.imgholder}><img src={Biochill} alt="Policeman" /></div>
+                        <div className={styles.imgholder}><img src={biochill} alt="Policeman" /></div>
                         <div>
                             Working with neuroscience and psychology researchers, 
                             lead design of a biofeedback VR training system to investigate officers’ 

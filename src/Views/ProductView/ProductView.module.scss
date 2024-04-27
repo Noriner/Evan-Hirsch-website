@@ -1,6 +1,6 @@
 .wrapper{
     position: relative;
-    min-height: 90vh;
+    min-height: 88vh;
     
     .grid{
         position: absolute;
@@ -14,6 +14,23 @@
             "title1 break1 title2 break2 title3 break3 title4"
             "text1 break1 text2 break2 text3 break3 text4"
         ;
+
+        .backgroundimg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            z-index: -1; 
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: opacity(30%);
+                
+            }      
+        }
 
         .title{
             color: var(--LightBlue);
