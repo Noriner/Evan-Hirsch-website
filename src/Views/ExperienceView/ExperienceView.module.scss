@@ -3,10 +3,10 @@
     min-height: 88vh;
 
     .grid{
-        // position: absolute;
-        // top: 40%;
-        // -ms-transform: translateY(-50%);
-        // transform: translateY(-50%);
+        position: absolute;
+        top: 40%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         margin: 20px 50px;
         grid-template-columns: 16% 16% 16% auto 16% 16% 16% ;
         display: grid;
