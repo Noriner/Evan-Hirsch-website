@@ -143,3 +143,32 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper{
+        min-height: 80vh;
+        .grid{  
+            top: 45%;
+            .title{
+                font-size: 1.2em;
+            }
+            
+            #text1{
+                   
+                .imgholder{
+                    height: 190px;
+                    width: 190px;
+                    border-radius: 140px;
+                    
+                    img{
+                        position: absolute;
+                        top: 25px;
+                        left: 0;
+                        width: 100%;
+                        scale: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}

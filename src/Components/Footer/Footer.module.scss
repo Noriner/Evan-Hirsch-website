@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 0;
     max-width: 1380px;
-    width: 100%;
+    width: 100vw;
 
     .borderleft{
         border-left: 3px solid var(--LightBlue);
@@ -28,6 +28,7 @@
         grid-template-areas: 
             "thought product intervention experience"
         ;
+        width: 100%;
         
         a{
             text-decoration: none;
@@ -59,3 +60,14 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1370px) {
+    .wrapper{
+        max-width: 1280px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper{
+        max-width: 924px;
+    }
+}
