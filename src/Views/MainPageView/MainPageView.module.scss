@@ -63,17 +63,17 @@
                 position: absolute;
                 left: -45px;
                 width: 75%;
-                height: 40px;
+                height: 10%;
                 border-top: 3px solid var(--LightBlue);
                 border-left: 3px solid var(--LightBlue);
-                border-top-left-radius: 40px;
+                border-top-left-radius: 50px;
                 margin-left: 50px;
             }
 
             .borderleft{
                 position: absolute;
                 left: -35px;
-                top: 40px;
+                top: 10%;
                 height: 37%;
                 width: 40px;
                 border-right: 3px solid var(--LightBlue);
@@ -82,40 +82,28 @@
         }
         // end of border design text
 
-        .linkworkshop{
-            grid-area: linkwork;
+        a{
             color: var(--TextBlue);
             text-decoration: none;
             font-family: "FontBold";
             font-size: 1.3em;
             padding: 10px;
+        }
+
+        .linkworkshop{
+            grid-area: linkwork;
         }
 
         .linkproduct{
             grid-area: linkprod;
-            color: var(--TextBlue);
-            text-decoration: none;
-            font-family: "FontBold";
-            font-size: 1.3em;
-            padding: 10px;
         }
 
         .linkintervention{
-            grid-area: linkinter;
-            color: var(--TextBlue);
-            text-decoration: none;
-            font-family: "FontBold";
-            font-size: 1.3em;
-            padding: 10px;
+            grid-area: linkinter;   
         }
 
         .linkexp{
             grid-area: linkexp;
-            color: var(--TextBlue);
-            text-decoration: none;
-            font-family: "FontBold";
-            font-size: 1.3em;
-            padding: 10px;
         }
 
         .evanimg{
@@ -144,6 +132,122 @@
             margin: 0 auto;
             border: 7px solid #3F9BBF;
             border-radius: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .wrapper{
+        .grid{
+            top: 45%;
+            .text{
+                font-size: 1.15em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper{
+        min-height: 80vh;
+
+        .grid{
+            
+            grid-template-columns: auto 30% 30% 30% auto;
+            
+            
+            grid-template-areas: 
+                "break upprod text downexp break2"
+                "break linkprod text linkexp break2"
+                "break upwork text downinter break2"
+                "break linkwork text linkinter break2"
+            ;
+
+            .text{
+                font-size: 1.1em;
+                padding: 20px 15% 20px 20%;
+            }
+
+            //border design for text
+            .borderdesignup{
+           
+                .bordertop{
+                    width: 75%;
+                    height: 45px;
+                    margin-left: 5%;
+                }
+
+                .borderleft{
+                    height: 45%;
+                    width: 5%;
+                }  
+            }
+
+            .borderdesigndown{
+            
+                .bordertop{
+                    width: 75%;
+                    height: 10%;
+                    margin-left: 0%; 
+                    left: 10%;
+                }
+
+                .borderleft{
+                    left: 10%;
+                    margin-left: -5%;
+                    top: 10%;
+                    height: 45%;
+                    width: 5%;
+                }
+            }
+            // end of border design text
+
+            a{
+                font-size: 1.2em;
+            }
+
+            .linkworkshop{
+                max-width: 60%;                
+            }
+    
+            .linkproduct{
+                max-width: 60%;
+                margin: 0 3% 0 auto; 
+            }
+    
+            .linkintervention{
+                max-width: 40%;
+                margin: 0 auto 0 11%;    
+            }
+    
+            .linkexp{
+                max-width: 40%;
+                margin: 0 5% 0 auto;    
+            }
+
+            .evanimg{
+                margin: 0;
+                justify-self: end; 
+                max-width: 150px;              
+            }
+            .interimg{
+                margin: 10% 5% 0% 5%;
+                justify-self: start;
+                max-width: 160px;
+            }
+    
+            .prodimg{
+                margin: 0;
+                justify-self: end;
+                max-width: 146px;                
+            }
+    
+            .workimg{
+                margin: 0 10% 0 9%;
+                align-self: end;
+                justify-self: start;
+                max-width: 136px;  
+            }
         }
     }
 }
