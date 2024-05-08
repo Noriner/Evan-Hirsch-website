@@ -45,8 +45,8 @@ const MainPageView = () => {
                         <div>Design</div>
                     </Link>
                     <Link to="/experience&bio" className={styles.linkexp}>
-                            <div>Experience</div>
-                            <div>& Bio</div>
+                        <div>Experience</div>
+                        <div>& Bio</div>
                     </Link>
                     <img className={styles.evanimg} src={evan} alt="Evan Hirsch" />
                     <img className={styles.interimg} src={intervention} alt="Intervention" />

@@ -163,3 +163,88 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper{
+        min-height: 80vh;
+        .grid{
+            grid-template-areas: 
+            "title1 title1 title1 break title2 title2 title2"
+            "text text text break logo logo logo"
+            "text text text break logo logo logo"
+            "text text text break title3 title3 title3"
+            "text text text break logo2 logo2 logo2"
+            "link link link break logo2 logo2 logo2"
+            ;
+            top: 45%;
+            .title{
+                font-size: 1.1em;
+            }
+
+            .text{
+                font-size: 1em;
+                margin: 0.5em auto;
+
+                .left{
+                    width: 45%;
+                    margin: 0px 10px;
+                
+                    :last-child{
+                        margin-top: 1em;
+                    }
+                }
+
+                .right{
+                    width: 45%;
+                    margin: 0px 10px;
+                    
+                    :last-child{
+                        margin-top: 1em;
+                    }
+                }
+
+            }
+
+            .logobox{
+                margin-top: 10px;
+                img{
+                    width: 22%;
+                    margin: 10px 20px;
+                }
+    
+                #ea{
+                    max-height: 75px;
+                }
+    
+                #ubi{
+                    max-height: 75px;
+                }
+            }
+
+            .unibox{
+                    
+                .leftbox{
+                    margin: 10px 25px;
+                    img{
+                        max-width: 195px;
+                    }
+    
+                    .subtitle{
+                        max-width: 195px;
+                    }
+                }
+    
+                .rightbox{
+                    margin: 0px 0px;
+                    img{
+                        max-width: 175px;
+                    }
+    
+                    .subtitle{
+                        max-width: 195px;
+                    }
+                }
+            }
+        }
+    }
+}

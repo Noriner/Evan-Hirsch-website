@@ -20,7 +20,7 @@ const  InterventionView = () => {
                         <div>Health Companion</div>
                     </div>
                     <div id={styles.text1} className={styles.text}>
-                        <div>
+                        <div className={styles.textbetween}>
                             Partnering with European  psychology researchers, 
                             led design of a stepped-care mobile based behavioral 
                             health program (currently in RCTs).
@@ -43,7 +43,7 @@ const  InterventionView = () => {
                     </div>
                     <div id={styles.title3} className={styles.title}>CounterNet</div>
                     <div id={styles.text3} className={styles.text}>
-                        <div>
+                        <div className={styles.textbetween}>
                             Designed and produced a training simulation game with USC for 
                             the US Naval Postgraduate School to train  operators and 
                             policymakers to identify and disrupt internet terrorist recruitment. 
