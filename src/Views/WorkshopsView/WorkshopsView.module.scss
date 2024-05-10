@@ -40,8 +40,7 @@
 
         img{
             max-width: 90%;
-            height: 162px;
-            
+            height: 162px;   
         }
 
         #img1{
@@ -147,5 +146,76 @@
                 border-bottom-left-radius: 50px;
             }  
         }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper{
+        min-height: 80vh;
+        .grid{
+            
+            .title{
+                margin: 0;
+                align-self: center;
+            }
+            .text{
+                font-size: 1em;
+            }
+
+            #text1{
+                margin: 15px 35px;
+            }
+
+            #text3{
+                div{
+                    margin: 5px;
+
+                    ul{
+                        margin: 0;
+                    }
+                }
+            }
+
+            #text4{
+                div{
+                    margin: 5px;
+                }
+            }
+
+            img{
+                max-height: 99px;
+            }
+
+            .borderdesignup{    
+                .bordertop{
+                    right: 15px;
+                    width: 55%;
+                    height: 40px;
+                }
+    
+                .borderright{
+                    top: 40px;
+                    height: 65%;
+                    width: 15px;
+                }  
+            }
+    
+            .borderdesigndown{
+    
+                .bordertop{
+                    top: 10%;
+                    width: 15px;
+                    height: 65%;
+                }
+    
+                .borderright{
+                    top: 75%;
+                    left: 15px;
+                    height: 40px;
+                    width: 75%;
+                }  
+            }
+        }
+
     }
 }
