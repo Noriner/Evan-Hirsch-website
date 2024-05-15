@@ -48,10 +48,18 @@ const MainPageView = () => {
                         <div>Experience</div>
                         <div>& Bio</div>
                     </Link>
-                    <img className={styles.evanimg} src={evan} alt="Evan Hirsch" />
-                    <img className={styles.interimg} src={intervention} alt="Intervention" />
-                    <img className={styles.prodimg} src={product} alt="Product" />
-                    <img className={styles.workimg} src={workshop} alt="workshop" />
+                    <div id={styles.evanimg}>
+                        <img className={styles.evanimg} src={evan} alt="Evan Hirsch" />
+                    </div>
+                    <div id={styles.interimg}>
+                        <img className={styles.interimg} src={intervention} alt="Intervention" />
+                    </div>
+                    <div id={styles.prodimg}>
+                        <img className={styles.prodimg} src={product} alt="Product" />
+                    </div>
+                    <div id={styles.workimg}>
+                        <img className={styles.workimg} src={workshop} alt="workshop" />
+                    </div>
                 </div>
             </div>
             <MainPageFooter></MainPageFooter>
