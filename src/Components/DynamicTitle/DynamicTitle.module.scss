@@ -19,3 +19,9 @@
         border-left: 4px solid var(--LightBlue);
     }
 }
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    .wrapper{
+        display: none;
+    }
+}
