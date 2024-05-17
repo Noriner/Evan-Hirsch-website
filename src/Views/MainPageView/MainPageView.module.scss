@@ -314,8 +314,113 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .wrapper{
-        display: none;
+        position: static;
+        
+        .grid{
+            position: static;
+            top: 0;
+            transform: none;
+            grid-template-columns: auto 46% 46% auto;
+            grid-template-areas: 
+            "space upprod break space2"
+            "space upprod downinter space2"
+            "space linkprod downinter space2"
+            "space break2 linkinter space2"
+            "space text text space2"
+            "space upwork upwork space2"
+            "space linkwork linkwork space2"
+            "space downexp downexp space2"
+            "space linkexp linkexp space2s"
+            ;
+
+            .text{
+                padding: 40px 10px;
+            }
+
+            .borderdesignup{
+    
+                .bordertop{ 
+                    left: 49%;   
+                    width: 35%;
+                    height: 10%;
+                    border-radius: 0;
+                    border-top: 0;
+                    border-bottom: 3px solid var(--LightBlue);
+                }
+    
+                .borderleft{
+                    position: absolute;
+                    top: 10%;
+                    left: 84%;
+    
+                    height: 55%;
+                    width: 10%;
+
+                    border-top-right-radius: 50px;
+                    border-bottom: 0;
+                    border-top: 3px solid var(--LightBlue);
+                }  
+            }
+
+            .borderdesigndown{
+                .bordertop{
+                    left: 49%;
+                    top: 0%;
+    
+                    width: 35%;
+                    height: 10%;
+                    
+                    border-top: 0;
+                    border-bottom: 3px solid var(--LightBlue);
+                    border-left: 3px solid var(--LightBlue);
+                    border-radius: 0px;
+                }
+    
+                .borderleft{
+                    
+                    left: 84%;
+                    top: 10%;
+    
+                    height: 55%;
+                    
+                    border-top: 3px solid var(--LightBlue);
+                    border-right: 3px solid var(--LightBlue);
+                    border-bottom: 0;
+                    border-top-right-radius: 50px;
+                }
+            }
+
+            #prodimg{
+                margin: 0 auto;
+                align-self: end;
+                max-width: 50%;                
+            }
+
+            #interimg{
+                margin: 0 auto;
+                justify-self: start;
+                max-width: 60%;
+            }
+
+            #workimg{
+                margin: 10px auto;
+                align-self: end;
+                justify-self: start;
+                max-width: 60%; 
+                
+                img{
+                    max-width: 90%;
+                }
+            }
+
+            #evanimg{
+                margin: 10px auto;
+                img{
+                    max-width: 90%;
+                }     
+            }
+        }
     }
 }
