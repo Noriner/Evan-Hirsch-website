@@ -21,7 +21,15 @@
             left: 0;
             width: 100%; 
             height: 100%; 
-            z-index: -1; 
+            z-index: -1;
+            
+            :first-child{
+                display: none;
+            }
+
+            :last-child{
+                display: none;
+            }
             
             img{
                 width: 100%;
@@ -83,7 +91,6 @@
                 padding-top: 30px;   
                 position: relative;  
                          
-
                 .phonecase{
                     position: absolute;
                     margin: 0 auto;
@@ -205,6 +212,68 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper{
+        position: static;
+        .grid{
+            position: static;
+            top: 0%;
+            -ms-transform: none;
+            transform: none;
+            grid-template-columns: auto 95% auto;
+            grid-template-areas: 
+                "space title4 space2"
+                "space text4 space2"
+                "space title3 space2"
+                "space text3 space2"
+                "space title2 space2"
+                "space text2 space2"
+                "space title1 space2"
+                "space text1 space2"                
+            ;
+
+            .backgroundimg{
+                :first-child{
+                    display: block;
+                }
+    
+                :last-child{
+                    display: block;
+                }
+            }
+
+            #text1{  
+                .videophone{  
+                    padding-top: 30px; 
+                    min-height: 500px; 
+                             
+                    .phonecase{
+                        position: absolute;
+                        margin: 0 auto;
+                        left: 0;
+                        max-width: 260px;
+                        
+                    }
+                    
+                    .videoincase{
+                        max-width: 260px;
+                        max-height: 480px;
+                        position: absolute;
+                        margin: 0 auto;
+                        left: 7%;
+                        top: 46px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+
+        .breakerbox{
+            display: none;
         }
     }
 }

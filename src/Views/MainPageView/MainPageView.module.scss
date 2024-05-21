@@ -322,6 +322,7 @@
             position: static;
             top: 0;
             transform: none;
+            -ms-transform: none;
             grid-template-columns: auto 46% 46% auto;
             grid-template-areas: 
             "space upprod break space2"

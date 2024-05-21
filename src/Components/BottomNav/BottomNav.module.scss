@@ -1,0 +1,87 @@
+.wrapper{
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper{
+        display: block;
+        .grid{
+            display: grid;
+            grid-template-columns: auto 30% 30% 30% auto;
+            grid-template-areas: 
+                "space left middle right space2"
+            ;
+
+            a{
+                text-decoration: none;
+                color: var(--LinkGrey);
+                font-family: "FontLight";
+            }
+
+            .innergridleft{
+                display: grid;
+                grid-template-areas: 
+                    "arrow text1"
+                    "arrow text2"
+                ;
+
+                #titletop{
+                    grid-area: text1;
+                    text-align: left;
+                }
+
+                #titlebottom{
+                    grid-area: text2;
+                    text-align: left;
+                }
+
+                #arrowleft{
+                    grid-area: arrow;
+                    justify-self: end;
+                    margin-right: 10px;
+                    align-self: center;
+                    min-height: 80%;
+                }
+            }
+
+            .innergridright{
+                display: grid;
+                grid-template-areas: 
+                    "text1 arrow"
+                    "text2 arrow"
+                ;
+
+                #titletop{
+                    grid-area: text1;
+                    text-align: right;
+                }
+
+                #titlebottom{
+                    grid-area: text2;
+                    text-align: right;
+                }
+
+                #arrowright{
+                    grid-area: arrow;
+                    justify-self: start;
+                    margin-left: 10px;
+                    align-self: center;
+                    min-height: 80%;
+                }
+            }
+
+            #linkleft{
+                grid-area: left;
+            }
+
+            #backtotop{
+                grid-area: middle;
+            }
+
+            #linkright{
+                grid-area: right;
+            }
+
+        }
+    }
+}

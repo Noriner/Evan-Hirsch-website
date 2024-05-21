@@ -17,6 +17,7 @@ import usc from "../../Pictures/usclogo.png";
 import carnegie from "../../Pictures/cmu-logo.png";
 import gemhlab from "../../Pictures/gemh-logo.png";
 import linkedin from "../../Pictures/li-in-bug-1.png";
+import BottomNav from "../../Components/BottomNav/BottomNav";
 
 const  ExperienceView = () => {
     return(
@@ -98,6 +99,7 @@ const  ExperienceView = () => {
                     </div>
                 </div>
             </div>
+            <BottomNav />
             <SubPageFooter />
         </>
     )

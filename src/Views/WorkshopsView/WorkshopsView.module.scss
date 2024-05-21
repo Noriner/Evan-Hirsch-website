@@ -219,3 +219,30 @@
 
     }
 }
+@media only screen and (max-width: 767px) {
+    .wrapper{
+        position: static;
+        .grid{
+            position: static;
+            top: 0%;
+            -ms-transform: none;
+            transform: none;
+
+            grid-template-columns: auto 95% auto;
+            grid-template-areas: 
+                "space text1 space2"
+                "space title3 space2"
+                "space img2 space2"
+                "space text3 space2"
+                "space img3 space2"
+                "space title2 space2"
+                "space img4 space2"
+                "space text4 space2"
+                "space title1 space2" 
+                "space img1 space2" 
+                "space text2 space2"                
+            ;
+
+        }
+    }
+}

@@ -27,7 +27,6 @@ function DynamicTitle(){
             <div className={styles.wrapper}>
                 {subtitle && <div className={styles.border}></div>}
                 {subtitle && <h2>{subtitle}</h2>}
-                
             </div>
         </>
     )

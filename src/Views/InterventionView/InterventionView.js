@@ -8,13 +8,19 @@ import hotel from "../../Pictures/hotelgamescene.png";
 import mail from "../../Pictures/mail.png";
 import biochill from "../../Pictures/Biochill.png";
 import background from "../../Pictures/Background/BackgroundImg2.png"
+import BottomNav from "../../Components/BottomNav/BottomNav";
+
 
 const  InterventionView = () => {
     return(
         <>
             <div className={styles.wrapper}>
                 <div className={styles.grid}>
-                    <div className={styles.backgroundimg}><img src={background} alt="" /></div>
+                    <div className={styles.backgroundimg}>
+                        <img src={background} alt="" />
+                        <img src={background} alt="" />
+                        <img src={background} alt="" />
+                    </div>
                     <div id={styles.title1} className={styles.title}>
                         <div>University Behavioral</div>
                         <div>Health Companion</div>
@@ -68,6 +74,7 @@ const  InterventionView = () => {
                     <div id={styles.breaker3} className={styles.breakerbox}><div className={styles.breaker}></div></div>
                 </div>
             </div>
+            <BottomNav />
             <SubPageFooter />
         </>
     )

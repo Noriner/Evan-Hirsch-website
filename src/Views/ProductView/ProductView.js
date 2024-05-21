@@ -8,13 +8,18 @@ import kimmie from "../../Pictures/KimmiePathExtract.png";
 import appscreen from "../../Pictures/AppScreen.png";
 import drmovie from "../../Videos/DoctorVideo.mp4";
 import background from "../../Pictures/Background/background_productview.png";
+import BottomNav from "../../Components/BottomNav/BottomNav";
 
 const  ProductView = () => {
     return(
         <>
             <div className={styles.wrapper}>
                 <div className={styles.grid}>
-                    <div className={styles.backgroundimg}><img src={background} alt="" /></div>
+                    <div className={styles.backgroundimg}>
+                        <img src={background} alt="" />
+                        <img src={background} alt="" />
+                        <img src={background} alt="" />    
+                    </div>
                     <div id={styles.title1} className={styles.title}>
                         <div>Centrum Vitamins</div>
                         <div className={styles.subtitle}>Child Resistant Packing</div>    
@@ -70,7 +75,7 @@ const  ProductView = () => {
                     <div id={styles.breaker3} className={styles.breakerbox}><div className={styles.breaker}></div></div>
                 </div>
             </div>
-            
+            <BottomNav />
             <SubPageFooter />
         </>
     )

@@ -5,6 +5,7 @@ import ted from "../../Pictures/TedEvan.png";
 import critclass from "../../Pictures/critclass.png";
 import workshop from "../../Pictures/workshops.jpg";
 import presentation from "../../Pictures/presentation.png";
+import BottomNav from "../../Components/BottomNav/BottomNav";
 
 const WorkshopsView = () => {
     return(
@@ -64,6 +65,7 @@ const WorkshopsView = () => {
                     </div>
                 </div>
             </div>
+            <BottomNav />
             <SubPageFooter />
         </>
     )

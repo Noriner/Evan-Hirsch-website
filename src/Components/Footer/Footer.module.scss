@@ -72,13 +72,8 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .wrapper{
-        .borderleft{
-            display: none;
-        }
-        .borderbottom{
-            display: none;
-        }
+        display: none;
     }
 }

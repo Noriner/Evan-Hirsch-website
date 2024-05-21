@@ -7,6 +7,8 @@ import evan from "../../Pictures/ev-headshot.png";
 import intervention from "../../Pictures/intervention.png";
 import product from "../../Pictures/image-6.png";
 import workshop from "../../Pictures/mask-group.png";
+import BottomNav from "../../Components/BottomNav/BottomNav";
+
 
 const MainPageView = () => {
     return (
@@ -62,6 +64,7 @@ const MainPageView = () => {
                     </div>
                 </div>
             </div>
+            <BottomNav></BottomNav>
             <MainPageFooter></MainPageFooter>
         </>
     );
