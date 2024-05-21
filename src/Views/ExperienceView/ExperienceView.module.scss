@@ -248,3 +248,56 @@
         }
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .wrapper{
+        position: static;
+        .grid{
+            position: static;
+            top: 0%;
+            -ms-transform: none;
+            transform: none;
+            margin: 20px;
+            grid-template-columns: auto 100% auto;
+            grid-template-areas: 
+                "space title1 space2"
+                "space text space2"
+                "space link space2"
+                "space title2 space2"
+                "space logo space2"
+                "space title3 space2"
+                "space logo2 space2"
+            ;
+
+            .text{
+                .left{
+                    display: block;
+                    width: 100%;
+                    margin: 0;
+                }
+                .right{
+                    display: block;
+                    width: 100%;
+                    margin: 0;
+                }
+
+            }
+            
+
+            .link{
+                text-align: center;
+            }
+
+            .logobox{
+                img{
+                    width: 35%;
+                }
+            }
+        }
+
+
+        .breakerbox{
+            display: none;
+        }
+    }
+}
