@@ -163,6 +163,52 @@
         }
     }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    .wrapper{
+        .grid{
+            top: 40%;
+            grid-template-areas: 
+            "title1 title1 title1 break title2 title2 title2"
+            "text text text break logo logo logo"
+            "text text text break logo logo logo"
+            "text text text break title3 title3 title3"
+            "text text text break logo2 logo2 logo2"
+            "link link link break logo2 logo2 logo2"
+            ;
+
+            .text{
+                margin: 0;
+                font-size: 1em;
+            }   
+            
+            .unibox{
+                    
+                .leftbox{
+                    margin: 5px;
+                    img{
+                        max-width: 190px;
+                    }
+    
+                    .subtitle{
+                        max-width: 190px;
+                    }
+                }
+    
+                .rightbox{
+                    img{
+                        max-width: 170px;
+                    }
+    
+                    .subtitle{
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .wrapper{
@@ -186,8 +232,8 @@
                 margin: 0.5em auto;
 
                 .left{
-                    width: 45%;
-                    margin: 0px 10px;
+                    width: 48%;
+                    margin: 2px ;
                 
                     :last-child{
                         margin-top: 1em;
@@ -195,8 +241,8 @@
                 }
 
                 .right{
-                    width: 45%;
-                    margin: 0px 10px;
+                    width: 48%;
+                    margin: 2px ;
                     
                     :last-child{
                         margin-top: 1em;
@@ -226,22 +272,22 @@
                 .leftbox{
                     margin: 10px 25px;
                     img{
-                        max-width: 195px;
+                        max-width: 145px;
                     }
     
                     .subtitle{
-                        max-width: 195px;
+                        max-width: 145px;
                     }
                 }
     
                 .rightbox{
                     margin: 0px 0px;
                     img{
-                        max-width: 175px;
+                        max-width: 135px;
                     }
     
                     .subtitle{
-                        max-width: 195px;
+                        max-width: 145px;
                     }
                 }
             }
@@ -249,7 +295,38 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 820px) {
+    .wrapper{
+        .grid{
+            .unibox{
+                    
+                .leftbox{
+                    margin: 10px 25px;
+                    img{
+                        max-width: 145px;
+                    }
+    
+                    .subtitle{
+                        max-width: none;
+                    }
+                }
+    
+                .rightbox{
+                    margin: 0px 0px;
+                    img{
+                        max-width: 135px;
+                    }
+    
+                    .subtitle{
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 810px) {
     .wrapper{
         position: static;
         .grid{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SubPageFooter from "../../Components/Footer/SubPageFooter/SubPageFooter";
 import styles from "./ExperienceView.module.scss";
 import ama from "../../Pictures/ama-logo.png";
@@ -20,6 +20,10 @@ import linkedin from "../../Pictures/li-in-bug-1.png";
 import BottomNav from "../../Components/BottomNav/BottomNav";
 
 const  ExperienceView = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <>
             <div className={styles.wrapper}>

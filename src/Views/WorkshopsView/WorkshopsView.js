@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import SubPageFooter from "../../Components/Footer/SubPageFooter/SubPageFooter";
 import styles from "./WorkshopsView.module.scss";
 import ted from "../../Pictures/TedEvan.png";
@@ -8,6 +8,10 @@ import presentation from "../../Pictures/presentation.png";
 import BottomNav from "../../Components/BottomNav/BottomNav";
 
 const WorkshopsView = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <>
             <div className={styles.wrapper}>

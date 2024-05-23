@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import MainPageFooter from "../../Components/Footer/MainPageFooter/MainPageFooter";
 import styles from "./MainPageView.module.scss";
@@ -11,6 +11,10 @@ import BottomNav from "../../Components/BottomNav/BottomNav";
 
 
 const MainPageView = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <>
             <div className={styles.wrapper}>
