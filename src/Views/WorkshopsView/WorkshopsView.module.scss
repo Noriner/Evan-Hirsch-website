@@ -73,7 +73,7 @@
         #text1{
             grid-area: text1;
             color: white;
-            margin: 25px 45px;
+            margin: 10% 15%;
         }
 
         #text2{
@@ -102,9 +102,9 @@
 
             .bordertop{
                 position: absolute;
-                right: 25px;
+                right: 10%;
                 width: 55%;
-                height: 40px;
+                height: 15%;
                 border-top: 3px solid var(--WhiteGrey);
                 border-right: 3px solid var(--WhiteGrey);
                 border-top-right-radius: 50px;
@@ -113,9 +113,9 @@
             .borderright{
                 position: absolute;
                 right: 0;
-                top: 40px;
+                top: 15%;
                 height: 45%;
-                width: 25px;
+                width: 10%;
                 border-left: 3px solid var(--WhiteGrey);
                 border-bottom: 3px solid var(--WhiteGrey);
             }  
@@ -128,8 +128,8 @@
 
             .bordertop{
                 position: absolute;
-                top: 10%;
-                width: 25px;
+                top: 15%;
+                width: 10%;
                 height: 45%;
                 border-top: 3px solid var(--WhiteGrey);
                 border-right: 3px solid var(--WhiteGrey);
@@ -137,14 +137,51 @@
 
             .borderright{
                 position: absolute;
-                top: 55%;
-                left: 25px;
-                height: 40px;
+                top: 60%;
+                left: 10%;
+                height: 15%;
                 width: 45%;
                 border-left: 3px solid var(--WhiteGrey);
                 border-bottom: 3px solid var(--WhiteGrey);
                 border-bottom-left-radius: 50px;
             }  
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1410px) {
+    .wrapper{
+        .grid{
+            .borderdesignup{
+                    
+                .bordertop{
+                    right: 10%;
+                    width: 55%;
+                    height: 15%;
+                }
+    
+                .borderright{
+                    right: 0;
+                    top: 15%;
+                    height: 60%;
+                    width: 10%;                    
+                }  
+            }
+
+            .borderdesigndown{
+                .bordertop{
+                    top: 15%;
+                    width: 10%;
+                    height: 60%;                    
+                }
+    
+                .borderright{
+                    top: 75%;
+                    left: 10%;
+                    height: 15%;
+                    width: 45%;
+                } 
+            }
         }
     }
 }

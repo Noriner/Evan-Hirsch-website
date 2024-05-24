@@ -92,20 +92,22 @@
                 position: relative;  
                          
                 .phonecase{
-                    position: absolute;
+                    position: static;
                     margin: 0 auto;
-                    max-width: 210px;
-                    left: 15%;
+                    max-width: 220px;  
                 }
                 
                 .videoincase{
                     max-width: 200px;
-                    max-height: 380px;
+                    max-height: 400px;
                     position: absolute;
-                    margin: 0 auto;
-                    left: 21%;
-                    top: 46px;
+                    //margin: 0 auto;
+                    //left: 21%;
+                    //top: 46px;
                     z-index: -1;
+                    top: 53%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
         }
@@ -200,15 +202,12 @@
     
                     .phonecase{
                         max-width: 150px;
-                        left: 12%;
+                        
                     }
                     
                     .videoincase{
                         max-width: 140px;
-                        max-height: 270px;                        
-                        left: 18%;
-                        top: 21px;
-                        
+                        max-height: 270px;                                                
                     }
                 }
             }
@@ -236,6 +235,14 @@
                 "space text1 space2"                
             ;
 
+            .text{
+                margin-top: 0;
+            }
+
+            .title{
+                margin: 25px 0;
+            }
+
             .backgroundimg{
                 :first-child{
                     display: block;
@@ -246,26 +253,74 @@
                 }
             }
 
+            #text3{
+                display: grid;
+                grid-template-areas: 
+                    "img"
+                    "text"
+                ;
+
+                .imgholder{
+                    grid-area: img;
+                    padding-top: 0;
+                }
+
+                .textbetween{
+                    grid-area: text;
+                }
+            }
+
+            #text2{
+                display: grid;
+                grid-template-areas: 
+                    "img"
+                    "img2"
+                    "text"
+                ;
+
+                .imgholder{
+                    grid-area: img;
+                }
+
+                .imgholder:last-child{
+                    grid-area: img2;
+                }
+
+                .textbetween{
+                    grid-area: text;
+                }
+            }
+
             #text1{  
+                display: grid;
+                grid-template-areas: 
+                    "img"
+                    "text"
+                ;
+
+                .textbetween{
+                    grid-area: text;
+                }
+
                 .videophone{  
-                    padding-top: 30px; 
+                    margin-top: 0;
+                    grid-area: img;
+                    padding-top: 0; 
                     min-height: 500px; 
                              
                     .phonecase{
-                        position: absolute;
+                        position: static;
                         margin: 0 auto;
-                        left: 0;
-                        max-width: 260px;
-                        
+                        max-width: 260px;                        
                     }
                     
                     .videoincase{
-                        max-width: 260px;
-                        max-height: 480px;
                         position: absolute;
-                        margin: 0 auto;
-                        left: 7%;
-                        top: 46px;
+                        max-height: 467px;
+                        min-width: 255px; 
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                         z-index: -1;
                     }
                 }
