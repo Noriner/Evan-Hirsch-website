@@ -56,7 +56,7 @@ const  ProductView = () => {
                     <div id={styles.text2} className={styles.text}>
                         <div className={styles.imgholder}><img src={surface} alt="Microsoft Surface screen" /></div>
                         <div>Design Director for the first multi-touch computer with a ground breaking multi-user interface.</div>
-                        <div><video src={movie} className={styles.videoincase} autoPlay loop></video></div>
+                        <div className={styles.videoholder}><video src={movie} className={styles.videoincase} autoPlay loop></video></div>
                     </div>
                     <div id={styles.text3} className={styles.text}>
                         <div>

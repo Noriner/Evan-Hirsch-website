@@ -186,7 +186,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 960px) and (max-width: 1024px) {
     .wrapper{
         min-height: 80vh;
         .grid{
@@ -256,6 +256,76 @@
 
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .wrapper{
+        .grid{
+            top: 40%;
+            .title{
+                margin: 0;
+                align-self: center;
+            }
+            .text{
+                font-size: 0.95em;
+            }
+
+            #text1{
+                margin: 5% 20px;
+            }
+
+            #text3{
+                div{
+                    margin: 5px;
+
+                    ul{
+                        margin: 0;
+                    }
+                }
+            }
+
+            #text4{
+                div{
+                    margin: 5px;
+                }
+            }
+
+            img{
+                max-height: 99px;
+            }
+
+            .borderdesignup{    
+                .bordertop{
+                    right: 5%;
+                    width: 55%;
+                    height: 40px;
+                }
+    
+                .borderright{
+                    top: 40px;
+                    height: 65%;
+                    width: 5%;
+                }  
+            }
+    
+            .borderdesigndown{
+    
+                .bordertop{
+                    top: 10%;
+                    width: 5%;
+                    height: 66%;
+                }
+    
+                .borderright{
+                    top: 76%;
+                    left: 5%;
+                    height: 40px;
+                    width: 75%;
+                }  
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .wrapper{
         position: static;
