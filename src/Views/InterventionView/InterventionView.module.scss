@@ -43,7 +43,7 @@
         .title{
             color: var(--LightBlue);
             font-family: "FontBold";
-            font-size: 1.37em;
+            font-size: 1.2em;
 
             .subtitle{
                 font-family: "FontLight";
@@ -70,7 +70,7 @@
             color: var(--TextLightBlue);
             font-family: "FontLight";
             letter-spacing: 1.1px;
-            font-size: 1.2em;
+            font-size: 1.1em;
             text-align: left;
             margin-top: 10%;
 
@@ -80,6 +80,13 @@
 
             div{
                 margin-bottom: 1em;
+            }
+
+            .imgholder{
+                text-align: center;
+                img{
+                    max-width: 90%;
+                }
             }
         }
 
@@ -101,9 +108,6 @@
                     max-width: 200px;
                     max-height: 400px;
                     position: absolute;
-                    //margin: 0 auto;
-                    //left: 21%;
-                    //top: 46px;
                     z-index: -1;
                     top: 53%;
                     left: 50%;
@@ -114,12 +118,6 @@
 
         #text2{
             grid-area: text2;
-
-            .imgholder{
-                img{
-                    max-width: 100%;
-                }
-            }
 
             .textbetween{
                 margin: 10% 0;
@@ -132,9 +130,6 @@
 
             .imgholder{
                 padding-top: 1em;
-                img{
-                    max-width: 100%;
-                }
             }
         }
 
@@ -143,9 +138,6 @@
 
             .imgholder{
                 text-align: center;
-                img{
-                    max-width: 85%;
-                }
             }
         }
 
@@ -183,16 +175,22 @@
             top: 45%;
             .text{
                 letter-spacing: 0;
-                font-size: 1.1em;
+                font-size: 1em;
                 margin-top: 10%;
 
                 .textbetween{
                     margin: 10% 0;
                 }
+
+                .imgholder{
+                    img{
+                        max-width: 80%;
+                    }
+                }
             }
 
             .title{
-                font-size: 1.2em;
+                font-size: 1em;
             }
 
             #text1{
