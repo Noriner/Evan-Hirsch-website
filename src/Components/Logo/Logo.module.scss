@@ -21,11 +21,37 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .wrapper{
+        a{
+            .name{
+                letter-spacing: 1px;
+
+                h1{
+                    font-size: 1.5em;
+                }
+
+            }
+
+            .profession{
+                max-width: 170px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .wrapper{
         a{
             .name{
                 letter-spacing: 1px;
+                h1{
+                    font-size: 2em;
+                }
+            }
+
+            .profession{
+                max-width: none;
             }
         }
     }

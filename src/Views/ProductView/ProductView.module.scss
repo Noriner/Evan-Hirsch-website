@@ -35,8 +35,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                filter: opacity(30%);
-                
+                filter: opacity(30%);                
             }      
         }
 
@@ -79,8 +78,17 @@
             }
 
             .imgholder{
+                text-align: center;
                 img{
-                    max-width: 100%;
+                    max-width: 90%;
+                }
+            }
+
+            .videoholder{
+                max-width: 100%;
+                text-align: center;
+                .videoincase{
+                    max-width: 90%;
                 }
             }
         }
@@ -89,28 +97,14 @@
             grid-area: text1;
 
             .imgholder{
-                height: 280px;
-                width: 280px;
-                border-radius: 140px;
-                overflow: hidden;
-                position: relative;
-                margin: 1em auto;
                 img{
-                    position: absolute;
-                    top: 33px;
-                    left: 0;
-                    width: 100%;
-                    scale: 1.4;
+                    border-radius: 50%;
                 }
             }
         }
 
         #text2{
             grid-area: text2;
-
-            .videoincase{
-                max-width: 100%;
-            }
         }
 
         #text3{
@@ -119,10 +113,6 @@
 
         #text4{
             grid-area: text4;
-
-            .videoincase{
-                max-width: 100%;
-            }
         }
 
         .breakerbox{
@@ -152,43 +142,17 @@
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1310px) {
-    .wrapper{
-        .grid{
-            #text1{
-                .imgholder{
-                    height: 210px;
-                    width: 210px;
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .wrapper{
         min-height: 80vh;
         .grid{  
-            top: 45%;
+            
             .title{
-                font-size: 1.2em;
+                font-size: 1em;
             }
             
-            #text1{
-                   
-                .imgholder{
-                    height: 190px;
-                    width: 190px;
-                    border-radius: 140px;
-                    
-                    img{
-                        position: absolute;
-                        top: 25px;
-                        left: 0;
-                        width: 100%;
-                        scale: 1.4;
-                    }
-                }
+            .text{
+                font-size: 1em;
             }
         }
     }
@@ -198,8 +162,8 @@
         .grid{
             #text1{
                 .imgholder{
-                    height: 160px;
-                    width: 160px;
+                    // height: 160px;
+                    // width: 160px;
                 }
             }
         }

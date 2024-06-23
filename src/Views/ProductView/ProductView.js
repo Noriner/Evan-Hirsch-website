@@ -66,7 +66,7 @@ const  ProductView = () => {
                         <div className={styles.imgholder}><img src={kimmie} alt="Character standing in front of camera" /></div>
                     </div>
                     <div id={styles.text4} className={styles.text}>
-                        <div><video src={drmovie} className={styles.videoincase} autoPlay loop></video></div>
+                        <div className={styles.videoholder}><video src={drmovie} className={styles.videoincase} autoPlay loop></video></div>
                         <div>
                             Design and product leadership for AI and machine learning, 
                             cloud native platform and tools to augment clinical expertise 
