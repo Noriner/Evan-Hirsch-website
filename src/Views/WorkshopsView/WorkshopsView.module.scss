@@ -186,6 +186,18 @@
     }
 }
 
+@media only screen and (max-height: 760px){
+    .wrapper{
+        position: static;
+        min-height: 80vh;
+    
+        .grid{
+            position: static;
+            transform: none;
+        }
+    }
+}
+
 @media only screen and (min-width: 960px) and (max-width: 1024px) {
     .wrapper{
         min-height: 80vh;

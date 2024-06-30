@@ -66,6 +66,12 @@
     }
 }
 
+@media only screen and (max-height: 760px){
+    .wrapper{
+        position: relative;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .wrapper{
         margin: 20px 30px;
