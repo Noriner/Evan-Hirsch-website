@@ -2,7 +2,6 @@ import React, {useEffect} from "react";
 import SubPageFooter from "../../Components/Footer/SubPageFooter/SubPageFooter";
 import styles from "./ExperienceView.module.scss";
 import ama from "../../Pictures/ama-logo.png";
-import aha from "../../Pictures/amheartlogo.png";
 import anthem from "../../Pictures/anthemlogo.png"; 
 import ea from "../../Pictures/ea.svg";
 import erasmus from "../../Pictures/erasmuslogo.png";
