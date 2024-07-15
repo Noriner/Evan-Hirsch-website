@@ -66,7 +66,6 @@ const  ExperienceView = () => {
                     <div id={styles.title2} className={styles.title}>Partial Client List</div>
                     <div id={styles.logobox} className={styles.logobox}>
                         <img src={ama} alt="Ama logo" />
-                        <img src={aha} alt="American Heart Associantion logo" />
                         <img src={anthem} alt="Anthem logo" />
                         <img id={styles.ea} src={ea} alt="EA logo" />
                         <img src={erasmus} alt="Erasmus logo" />
