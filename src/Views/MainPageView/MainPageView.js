@@ -55,16 +55,24 @@ const MainPageView = () => {
                         <div>& Bio</div>
                     </Link>
                     <div id={styles.evanimg}>
-                        <img className={styles.evanimg} src={evan} alt="Evan Hirsch" />
-                    </div>
+                        <Link to="/experience&bio">
+                            <img className={styles.evanimg} src={evan} alt="Evan Hirsch" />
+                        </Link>
+                    </div>                    
                     <div id={styles.interimg}>
-                        <img className={styles.interimg} src={intervention} alt="Intervention" />
+                        <Link to="/interventiondesign">
+                            <img className={styles.interimg} src={intervention} alt="Intervention" />
+                        </Link>
                     </div>
                     <div id={styles.prodimg}>
-                        <img className={styles.prodimg} src={product} alt="Product" />
+                        <Link to="/product&service">
+                            <img className={styles.prodimg} src={product} alt="Product" />
+                        </Link>
                     </div>
                     <div id={styles.workimg}>
-                        <img className={styles.workimg} src={workshop} alt="workshop" />
+                        <Link to="/workshops&thoughtleadership">
+                            <img className={styles.workimg} src={workshop} alt="workshop" />
+                        </Link>
                     </div>
                 </div>
             </div>
